@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shuffle & Sort</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="box-layout-and-button-container">
+    <div class="box-layout">
+      <div class="row-of-box-layout">
+        <div class="box-layout-cell" id="1-box" style="background-color: #6F98A8">1</div>
+        <div class="box-layout-cell" id="2-box" style="background-color: #2B8EAD">2</div>
+        <div class="box-layout-cell" id="3-box" style="background-color: #2F454E">3</div>
+      </div>
+      <div class="row-of-box-layout">
+        <div class="box-layout-cell" id="4-box" style="background-color: #2B8EAD">4</div>
+        <div class="box-layout-cell" id="5-box" style="background-color: #2F454E">5</div>
+        <div class="box-layout-cell" id="6-box" style="background-color: #BFBFBF">6</div>
+      </div>
+      <div class="row-of-box-layout">
+        <div class="box-layout-cell" id="7-box" style="background-color: #BFBFBF">7</div>
+        <div class="box-layout-cell" id="8-box" style="background-color: #6F98A8">8</div>
+        <div class="box-layout-cell" id="9-box" style="background-color: #2F454E">9</div>
+      </div>
+    </div>
+    <div class="shuffle-and-sort-button">
+      <button class="shuffle-button" onclick="onShuffleOrSortClickHandler(false)">SHUFFLE</button>
+      <button class="sort-button" onclick="onShuffleOrSortClickHandler(true)">SORT</button>
+    </div>
+  </div>
+
+  <div class="box-layout-and-button-container-mobile">
+    <div class="shuffle-and-sort-title">Shuffle and Sort</div>
+    <div class="shuffle-and-sort-button-mobile">
+      <button class="shuffle-button-mobile" onclick="onShuffleOrSortClickHandler(false)">SHUFFLE</button>
+      <button class="sort-button-mobile" onclick="onShuffleOrSortClickHandler(true)">SORT</button>
+    </div>
+    <div class="box-layout-mobile">
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="1-box-mobile" style="background-color: #6F98A8"></div>
+        <div class="box-layout-cell-number">1</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="2-box-mobile" style="background-color: #2B8EAD"></div>
+        <div class="box-layout-cell-number">2</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="3-box-mobile" style="background-color: #2F454E"></div>
+        <div class="box-layout-cell-number">3</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="4-box-mobile" style="background-color: #2B8EAD"></div>
+        <div class="box-layout-cell-number">4</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="5-box-mobile" style="background-color: #2F454E"></div>
+        <div class="box-layout-cell-number">5</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="6-box-mobile" style="background-color: #BFBFBF"></div>
+        <div class="box-layout-cell-number">6</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="7-box-mobile" style="background-color: #BFBFBF"></div>
+        <div class="box-layout-cell-number">7</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="8-box-mobile" style="background-color: #6F98A8"></div>
+        <div class="box-layout-cell-number">8</div>
+      </div>
+      <div class="box-layout-cell-mobile">
+        <div class="box-layout-cell-mobile-strip" id="9-box-mobile" style="background-color: #2F454E"></div>
+        <div class="box-layout-cell-number">9</div>
+      </div>
+    </div>
+  </div>
+
+  <footer><i>Shuffle and sort by Satyaki Roy</i></footer>
+  <script src="index.js"></script>
+</body>
+</html>
